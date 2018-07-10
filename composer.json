@@ -21,7 +21,7 @@
         "php":                      ">=5.3.3",
 
         "symfony/framework-bundle": "~2.1|^3.4",
-        "sylius/resource-bundle":   "dev-master"
+        "sylius/resource-bundle":   "dev-master-Symfony3.4"
     },
     "require-dev": {
         "phpspec/phpspec2":         "dev-develop",
