@@ -21,7 +21,7 @@
         "php":                      ">=5.3.3",
 
         "symfony/framework-bundle": "~2.1|^3.4",
-        "sylius/resource-bundle":   "*"
+        "sylius/resource-bundle":   "dev-master"
     },
     "require-dev": {
         "phpspec/phpspec2":         "dev-develop",
@@ -33,6 +33,12 @@
     "config": {
         "bin-dir": "bin"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:ibrows/SyliusResourceBundle.git"
+        }
+    ],
     "autoload": {
         "psr-0": { "Sylius\\Bundle\\CartBundle": "" }
     },
