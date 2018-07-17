@@ -15,7 +15,7 @@ use Doctrine\Common\Persistence\ObjectRepository;
 use Sylius\Bundle\CartBundle\Provider\CartProviderInterface;
 use Symfony\Component\Form\FormFactory;
 use Twig_Extension;
-use Twig_SimpleFilter;
+use Twig_SimpleFunction;
 
 /**
  * Sylius cart engine twig extension.
@@ -65,8 +65,8 @@ class SyliusCartExtension extends Twig_Extension
     public function getFunctions()
     {
         return array(
-            'sylius_cart_get'  => new Twig_SimpleFilter($this, 'getCurrentCart'),
-            'sylius_cart_form' => new Twig_SimpleFilter($this, 'getItemFormView'),
+            'sylius_cart_get'  => new Twig_SimpleFunction($this, 'getCurrentCart'),
+            'sylius_cart_form' => new Twig_SimpleFunction($this, 'getItemFormView'),
         );
     }
 
