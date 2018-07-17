@@ -15,6 +15,7 @@ use Doctrine\Common\Persistence\ObjectRepository;
 use Sylius\Bundle\CartBundle\Provider\CartProviderInterface;
 use Symfony\Component\Form\FormFactory;
 use Twig_Extension;
+use Twig_SimpleFilter;
 
 /**
  * Sylius cart engine twig extension.
