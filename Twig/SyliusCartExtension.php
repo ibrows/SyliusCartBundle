@@ -65,8 +65,8 @@ class SyliusCartExtension extends Twig_Extension
     public function getFunctions()
     {
         return array(
-            'sylius_cart_get'  => new Twig_SimpleFunction('getCurrentCart'),
-            'sylius_cart_form' => new Twig_SimpleFunction('getItemFormView'),
+             new Twig_SimpleFunction('sylius_cart_get', array($this,'getCurrentCart')),
+             new Twig_SimpleFunction('sylius_cart_form', array($this, 'getItemFormView'))
         );
     }
 
